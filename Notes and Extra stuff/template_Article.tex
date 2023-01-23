@@ -1,0 +1,29 @@
+\documentclass[]{article}
+\usepackage{hyperref}
+%opening
+\title{Decision Tree Algorithm in Python From Scratch}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Coding the popular algorithm using just NumPy and Pandas in Python and explaining what's under the hood
+
+\end{abstract}
+
+\section{Introduction}
+
+The aim of this article is to make all the parts of a decision tree classifier clear by walking through the code that implements the algorithm. The code uses only NumPy, Pandas and the standard python libraries.
+
+The full code can be accessed \href{https://github.com/Eligijus112/decision-tree-python}{here}.
+
+As of now, the code creates a decision tree when the target variable is binary and the features are numeric. This is completely sufficient to understand the algorithm.
+
+The golden standard of building decision trees in python is the scikit-learn implementation:
+\href{https://scikit-learn.org/stable/modules/tree.html}{1.10. Decision Trees - scikit-learn 0.24.1 documentation}
+When I tested out my code I wanted to make sure that the results are identical to the scikit-learn implementation.
+The data used in this article is the famous Titanic survivor dataset. We will use two numeric variables — Age of the passenger and the Fare of the ticket — to predicting whether a passenger survived or not.
+The goal is to create the “best” splits of the numeric variables. Just eyeballing the data, we could guess that one good split is to split the data into two parts: observations that have Age < 10 and observations that have Age ≥ 10:
+\end{document}
